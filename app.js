@@ -6,7 +6,7 @@ const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 3000;
 const corsOptions = {
-    origin: 'https://kishan-final0portfolio-with-backend.onrender.com/',
+    origin: 'https://kishan-final0portfolio-with-backend.onrender.com',
     optionsSuccessStatus: 200,
 };
 
