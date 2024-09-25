@@ -5,7 +5,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     const formData = new FormData(this);
     const data = Object.fromEntries(formData.entries());
 
-    fetch('http://localhost:1000/send-email', {
+    fetch('https://kishan-final0portfolio-with-backend.onrender.com/send-email', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
