@@ -339,7 +339,7 @@ header .navbar ul li a {
 }
 
 .hero .hero-main .info h3 {
-  color: #414141;
+  color: rgb(139 137 137);
   font-family: "Fira Mono", monospace;
 }
 
@@ -347,6 +347,9 @@ header .navbar ul li a {
   font-size: 70px;
   font-family: "Manrope", sans-serif;
   font-weight: 600;
+  background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero .hero-main .info .para {
@@ -449,9 +452,20 @@ header .navbar ul li a {
     bottom: 0;
   }
 
+  .ham {
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
 }
 
 @media(max-width: 792px) {
+  .hero .hero-main .info h3 {
+    font-size: 16px;
+  }
+
   .hero .hero-main .info .para {
     max-width: 100%;
   }
