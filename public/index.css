@@ -308,7 +308,6 @@ header .navbar ul li a {
   align-items: center;
   position: absolute;
   z-index: 99;
-  /* background: red; */
   flex-wrap: wrap;
   padding: 1rem;
   width: 90%;
@@ -332,13 +331,11 @@ header .navbar ul li a {
 }
 
 .hero .hero-main .info {
-  /* background-color: gray; */
   max-width: 59%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 0.5rem;
-  /* background-color: blue; */
 }
 
 .hero .hero-main .info h3 {
@@ -359,7 +356,6 @@ header .navbar ul li a {
 }
 
 .hero .hero-main .myImg {
-  /* background-color: green; */
   max-width: 50%;
   padding: 3rem;
   display: flex;
@@ -449,7 +445,6 @@ header .navbar ul li a {
   }
 
   .hero .hero-main .myImg {
-    /* background-color: green; */
     position: absolute;
     bottom: 0;
   }
@@ -490,10 +485,6 @@ header .navbar ul li a {
   .hero .hero-main .info .para {
     font-size: 1rem;
   }
-
-  /* .iphone {
-    height: 90%;
-  } */
 
   .hero .hero-main .myImg .mail span {
     font-size: 1rem;
