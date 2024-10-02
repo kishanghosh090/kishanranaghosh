@@ -12,6 +12,7 @@
   --bg-education-card: rgb(8 15 35);
   --bg-skill-card: rgba(0, 0, 0, 0.5);
   --color-logo-slide: #D91656;
+  --bg-project-code-button: #f0f4f9;
 }
 
 body {
@@ -370,7 +371,7 @@ header .navbar ul li a {
 .hero .project .cards button {
   padding: 8px 10px;
   border: none;
-  background-color: #f0f4f9;
+  background-color: var(--bg-project-code-button);
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s ease-out;
