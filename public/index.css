@@ -292,6 +292,106 @@ header .navbar ul li a {
   position: relative;
 }
 
+.hero .project {
+  position: absolute;
+  height: 78vh;
+  width: 90%;
+  margin: auto;
+  background-color: var(--bg-education-card);
+  z-index: 9999;
+  top: 0;
+  border-radius: 20px;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.hero .project::-webkit-scrollbar {
+  display: none;
+}
+
+.hero .cross {
+  position: absolute;
+  z-index: 99999;
+  top: -2px;
+  right: 56px;
+  font-size: 3rem;
+  transition: all 0.6s ease-in-out;
+}
+
+.hero .cross-hide {
+  display: none;
+}
+
+.hero .project .cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .project .cards .card {
+  /* position: absolute; */
+  width: 80%;
+  /* background-color: black; */
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.hero .project .cards .card h3 {
+  font-size: 20px;
+  margin-top: 4rem;
+  font-family: "Manrope", sans-serif;
+}
+
+.hero .project .cards .card img {
+  height: 466px;
+  width: 80%;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.hero .project .cards p {
+  font-family: "Fira Mono", monospace;
+  max-width: 70%;
+  border: 2px dotted #fff;
+  padding: 10px;
+}
+
+.hero .project .cards button {
+  padding: 8px 10px;
+  border: none;
+  background-color: #f0f4f9;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.hero .project .cards button:hover {
+  background-color: #dfe4ea;
+  border-radius: 5px;
+}
+
+.hero .project .cards button a {
+  color: #585858;
+  font-size: 20px;
+}
+
+.hero .project-toggle {
+  transform: scale(0.2);
+  translate: 0px -720px;
+  /* display: none; */
+}
+
 .gradient {
   height: 75vh;
   width: 1000px;
@@ -459,6 +559,25 @@ header .navbar ul li a {
     padding: 10px;
   }
 
+  .hero .project {
+    top: 27px;
+  }
+
+  .hero .cross {
+    top: 37px;
+    right: 76px;
+    font-size: 2rem;
+  }
+
+  .hero .project .cards p {
+    max-width: 100%;
+  }
+
+  .hero .project .cards .card img {
+    width: 95%;
+    height: 402px;
+  }
+
 }
 
 @media(max-width: 792px) {
@@ -468,6 +587,19 @@ header .navbar ul li a {
 
   .hero .hero-main .info .para {
     max-width: 100%;
+  }
+
+  .hero .project .cards .card img {
+    width: 76%;
+    height: 283px;
+  }
+
+  .hero .project .cards p {
+    font-size: 14px;
+  }
+
+  .hero .project .cards .card {
+    width: 90%;
   }
 }
 
@@ -482,6 +614,11 @@ header .navbar ul li a {
 
   .hero .hero-main {
     gap: 6rem;
+  }
+
+  .hero .project .cards .card img {
+    width: 100%;
+    height: 243px;
   }
 }
 
@@ -528,6 +665,11 @@ header .navbar ul li a {
   .hero .hero-main .myImg .mail span {
     font-size: 1rem;
   }
+
+  .hero .project .cards .card img {
+    width: 88%;
+    height: 181px;
+  }
 }
 
 @media(max-width:373px) {
@@ -552,6 +694,14 @@ header .navbar ul li a {
   .hero .hero-main .myImg img {
     height: 9rem;
     width: 9rem;
+  }
+
+  .hero .cross {
+    right: 41px;
+  }
+
+  .hero .project {
+    width: 90%;
   }
 }
 
