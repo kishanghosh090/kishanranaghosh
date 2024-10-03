@@ -212,17 +212,25 @@ header .navbar ul li a {
   width: 80%;
   /* background-color: black; */
   padding: 20px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 1rem;
+  border-bottom: 2px dotted #fff;
 }
 
 .hero .project .cards .card h3 {
-  font-size: 20px;
-  margin-top: 4rem;
+  font-size: 22px;
+  margin-top: 50rem;
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+  padding: 10px;
+  border: 2px dotted;
+}
+
+.hero .project .cards .card h2 {
   font-family: "Manrope", sans-serif;
 }
 
