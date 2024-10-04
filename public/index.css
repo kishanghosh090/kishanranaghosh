@@ -771,6 +771,11 @@ header .navbar ul li a {
   border: 1px solid rgb(78, 55, 14);
 }
 
+.footer .arrow a {
+  color: #fff;
+  font-size: 4rem;
+}
+
 .footer .socials div {
   margin-bottom: 6px;
 }
@@ -781,15 +786,7 @@ header .navbar ul li a {
 }
 
 .footer .socials div i {
-
   margin-right: 11px;
-
-}
-
-
-.footer .arrow a {
-  color: #fff;
-  font-size: 5rem;
 }
 
 .footer .details .img {

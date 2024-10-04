@@ -167,12 +167,12 @@
     }
 
     .hero .project .cards .card h3 {
-        margin-top: 50rem;
+        margin-top: 38rem;
     }
 
     .hero .cross {
         top: 71px;
-        right: 76px;
+        right: 40px;
         font-size: 2rem;
     }
 
@@ -289,6 +289,10 @@
 
 /* height */
 @media(max-height: 756px) {
+    .hero .project .cards .card h3 {
+        margin-top: 42rem;
+    }
+
     .hero .hero-main .myImg {
         padding: 3rem;
     }
