@@ -186,7 +186,7 @@ header .navbar ul li a {
   margin: auto;
   background-color: var(--bg-education-card);
   z-index: 9999;
-  top: 0;
+  top: 83px;
   border-radius: 20px;
   padding: 20px;
   overflow-y: auto;
@@ -203,8 +203,8 @@ header .navbar ul li a {
 .hero .cross {
   position: absolute;
   z-index: 99900;
-  top: -2px;
-  right: 56px;
+  top: 95px;
+  right: 71px;
   font-size: 3rem;
   transition: all 0.6s ease-in-out;
 }
@@ -234,7 +234,7 @@ header .navbar ul li a {
 
 .hero .project .cards .card h3 {
   font-size: 22px;
-  margin-top: 50rem;
+  margin-top: 60rem;
   font-family: "Manrope", sans-serif;
   text-align: center;
   padding: 10px;

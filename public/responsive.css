@@ -163,7 +163,11 @@
     }
 
     .hero .project {
-        top: 27px;
+        top: 100px;
+    }
+
+    .hero .project .cards .card h3 {
+        margin-top: 50rem;
     }
 
     .hero .cross {
