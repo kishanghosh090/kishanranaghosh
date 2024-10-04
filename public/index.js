@@ -12,6 +12,7 @@ const linkedin = document.querySelector(".linkedin")
 const projecttoggle = document.querySelector(".project-toggle")
 const Projects = document.querySelector(".Projects")
 const crosshide = document.querySelector(".cross-hide")
+// use varibales
 
 ham.addEventListener("click", () => {
   coverhide.classList.toggle("cover-hide");

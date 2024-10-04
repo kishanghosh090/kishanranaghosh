@@ -50,10 +50,7 @@
         height: 100%;
         width: 100%;
         background: rgb(2, 0, 36);
-        background: linear-gradient(90deg,
-                rgba(2, 0, 36, 1) 0%,
-                rgba(9, 9, 121, 1) 35%,
-                rgb(0, 170, 255) 100%);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(9 41 121) 35%, rgb(15 128 184) 100%);
         top: 0;
         left: 0;
         justify-content: center;
