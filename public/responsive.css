@@ -44,6 +44,10 @@
         background-color: red;
     }
 
+    header {
+        top: 0;
+    }
+
     header .navbar ul {
         flex-direction: column;
         position: absolute;
@@ -126,6 +130,7 @@
     .hero {
         height: 100vh;
         justify-content: center;
+        margin-top: 4rem;
     }
 
     .gradient {
