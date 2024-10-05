@@ -292,7 +292,6 @@ header .navbar ul li a {
 .hero .project-toggle {
   transform: scale(0.2);
   translate: 0px -720px;
-  /* display: none; */
 }
 
 .gradient {
