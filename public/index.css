@@ -38,7 +38,7 @@ header {
 .gradient-header {
   height: 9vh;
   width: 112%;
-  background-image: radial-gradient(closest-side, rgb(203 71 139 / 30%), rgb(3 7 18));
+  background-image: radial-gradient(closest-side, rgb(203 71 139 / 25%), rgb(3 7 18));
   position: absolute;
   right: 0;
   z-index: -11111;
