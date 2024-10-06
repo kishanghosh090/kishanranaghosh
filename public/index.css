@@ -35,16 +35,6 @@ header {
   margin: auto;
 }
 
-.gradient-header {
-  height: 9vh;
-  width: 112%;
-  background-image: radial-gradient(closest-side, rgb(203 71 139 / 25%), rgb(3 7 18));
-  position: absolute;
-  right: 0;
-  z-index: -11111;
-  top: 0;
-}
-
 .cover {
   position: absolute;
   transition: all 0.45s ease-in-out;
