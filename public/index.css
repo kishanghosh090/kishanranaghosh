@@ -21,6 +21,32 @@ body {
   background-color: var(--bg-color-main);
 }
 
+/* welcome message */
+.welcomeMsg {
+  position: absolute;
+  margin-top: 2rem;
+  font-family: 'Manrope', sans-serif;
+  color: #212121;
+  background-color: #ffff;
+  z-index: 999000000;
+  padding: 40px;
+  left: 10px;
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+  transform: scale(0) translateY(1500px);
+}
+
+.welcomeMsg .cross-wlc {
+  position: absolute;
+  right: 11px;
+  top: 9px;
+}
+
+.welcomeAnimation {
+  transform: scale(1) translateY(0px);
+
+}
+
 /* navbar start */
 header {
   display: flex;

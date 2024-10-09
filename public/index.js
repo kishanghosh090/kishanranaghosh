@@ -12,6 +12,7 @@ const linkedin = document.querySelector(".linkedin")
 const projecttoggle = document.querySelector(".project-toggle")
 const Projects = document.querySelector(".Projects")
 const crosshide = document.querySelector(".cross-hide")
+const crosswlc = document.querySelector('.cross-wlc')
 // use varibales
 
 ham.addEventListener("click", () => {
@@ -69,4 +70,13 @@ Projects.addEventListener("click", () => {
 crosshide.addEventListener("click", () => {
   projecttoggle.classList.toggle("project-toggle")
   crosshide.classList.toggle("cross-hide")
+})
+
+setTimeout(() => {
+  document.querySelector('.welcomeMsg').classList.add('welcomeAnimation')
+}, 1400)
+
+
+crosswlc.addEventListener('click', () => {
+  document.querySelector('.welcomeMsg').classList.remove('welcomeAnimation')
 })
