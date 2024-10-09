@@ -74,7 +74,7 @@ crosshide.addEventListener("click", () => {
 
 setTimeout(() => {
   document.querySelector('.welcomeMsg').classList.add('welcomeAnimation')
-}, 1400)
+}, 1100)
 
 
 crosswlc.addEventListener('click', () => {
