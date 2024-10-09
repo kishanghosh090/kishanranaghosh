@@ -409,6 +409,7 @@
 
 
 /* about section start */
+
 @media(max-width: 428px) {
     .about .aboutHeading h2 {
         font-size: 2rem;

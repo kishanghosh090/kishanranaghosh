@@ -590,7 +590,7 @@ header .navbar ul li a {
 .about .skills .skill {
   background-color: var(--bg-skill-card);
   height: 10rem;
-  width: 20rem;
+  width: 28rem;
   padding: 1rem;
   border-radius: 1rem;
   transition: all 0.3s ease-out;
