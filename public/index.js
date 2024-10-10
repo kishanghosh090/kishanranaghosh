@@ -1,3 +1,6 @@
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelector('.loader').setAttribute('class', 'loader-hide')
+})
 const coverhide = document.querySelector(".cover-hide");
 const coverhide2 = document.querySelector(".cover-hide2");
 const hide = document.querySelector(".hide");
@@ -14,7 +17,6 @@ const Projects = document.querySelector(".Projects")
 const crosshide = document.querySelector(".cross-hide")
 const crosswlc = document.querySelector('.cross-wlc')
 // use varibales
-
 ham.addEventListener("click", () => {
   coverhide.classList.toggle("cover-hide");
   hide.classList.toggle("hide");

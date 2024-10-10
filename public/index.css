@@ -21,6 +21,27 @@ body {
   background-color: var(--bg-color-main);
 }
 
+/* loader */
+.loader {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 999999900;
+  background-color: #dfe4ea;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.loader-hide {
+  display: none;
+}
+
 /* welcome message */
 .welcomeMsg {
   position: absolute;
