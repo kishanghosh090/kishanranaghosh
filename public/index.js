@@ -1,3 +1,4 @@
+// loader
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('.loader').setAttribute('class', 'loader-hide')
 })

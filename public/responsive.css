@@ -302,14 +302,11 @@
         padding: 3rem;
     }
 
-    .hero .hero-main .myImg img {
-        height: 9rem;
-        width: 9rem;
-    }
 
     .hero .hero-main .myImg img {
         height: 9rem;
         width: 9rem;
+        transform: scale(0.7) translateY(20px);
     }
 
     .hero .cross {
