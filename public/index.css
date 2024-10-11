@@ -222,7 +222,7 @@ header .navbar ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 76px;
+  padding-top: 80px;
   overflow: hidden;
   position: relative;
 }
