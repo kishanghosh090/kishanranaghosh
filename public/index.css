@@ -51,6 +51,7 @@ body::-webkit-scrollbar {
   z-index: 99900;
   padding: 40px;
   left: 10px;
+  top: 100px;
   border-radius: 10px;
   transition: all 0.4s ease-in-out;
   transform: scale(0) translateY(1500px);
@@ -383,7 +384,7 @@ header .navbar ul li a {
 
 
 .hero .hero-main .info .hero-contact {
-  width: 108px;
+  width: 115px;
   height: 40px;
   cursor: pointer;
   color: #fff;
