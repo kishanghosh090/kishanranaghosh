@@ -1,10 +1,11 @@
 // loader
-const audio = new Audio("./assets/landing.mp3");
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('.loader').setAttribute('class', 'loader-hide');
-  audio.play();
 
 })
+const loading = new Audio("./assets/landing.mp3");
+const hamSound = new Audio("./assets/ham.mp3");
+const contactSound = new Audio("./assets/contact.mp3");
 const coverhide = document.querySelector(".cover-hide");
 const coverhide2 = document.querySelector(".cover-hide2");
 const hide = document.querySelector(".hide");
@@ -20,8 +21,10 @@ const projecttoggle = document.querySelector(".project-toggle")
 const Projects = document.querySelector(".Projects")
 const crosshide = document.querySelector(".cross-hide")
 const crosswlc = document.querySelector('.cross-wlc')
+const herocontact = document.querySelector(".hero-contact")
 // use varibales
 ham.addEventListener("click", () => {
+  hamSound.play();
   coverhide.classList.toggle("cover-hide");
   hide.classList.toggle("hide");
   coverhide2.classList.toggle("cover-hide2");
@@ -77,12 +80,15 @@ crosshide.addEventListener("click", () => {
   projecttoggle.classList.toggle("project-toggle")
   crosshide.classList.toggle("cross-hide")
 })
-
+herocontact.addEventListener("click", () => {
+  contactSound.play();
+})
 setTimeout(() => {
   document.querySelector('.welcomeMsg').classList.add('welcomeAnimation')
-}, 1100)
+}, 700)
 
 
 crosswlc.addEventListener('click', () => {
   document.querySelector('.welcomeMsg').classList.remove('welcomeAnimation')
+  loading.play();
 })
