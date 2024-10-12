@@ -659,7 +659,19 @@ header .navbar ul li a {
   border: 2px dotted;
   font-family: "Fira Mono", monospace;
   box-shadow: rgba(85, 85, 98, 0.25) 0px 30px 60px -12px inset, rgba(180, 172, 172, 0.3) 0px 18px 36px -18px inset;
+  animation: animateViewleft linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
 
+@keyframes animateViewleft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 .about .skills .skill:hover {
