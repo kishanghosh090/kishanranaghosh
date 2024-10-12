@@ -1,3 +1,4 @@
+const audio = new Audio("./audio.aac");
 document.getElementById('contactForm').addEventListener('submit', function (event) {
     event.preventDefault();
 
@@ -17,6 +18,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     })
         .then((data) => {
             document.getElementById('responseMessage').innerText = 'Message sent successfully!';
+            audio.play();
             document.getElementById('contactForm').reset();
         })
         .catch((error) => {
