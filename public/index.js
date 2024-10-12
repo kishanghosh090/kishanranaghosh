@@ -1,6 +1,9 @@
 // loader
+const audio = new Audio("./assets/landing.mp3");
 document.addEventListener('DOMContentLoaded', function () {
-  document.querySelector('.loader').setAttribute('class', 'loader-hide')
+  document.querySelector('.loader').setAttribute('class', 'loader-hide');
+  audio.play();
+
 })
 const coverhide = document.querySelector(".cover-hide");
 const coverhide2 = document.querySelector(".cover-hide2");
