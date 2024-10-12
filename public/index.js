@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 })
 const loading = new Audio("./assets/landing.mp3");
-const hamSound = new Audio("./assets/ham.mp3");
-const contactSound = new Audio("./assets/contact.mp3");
+const hamSound = new Audio("./assets/ham.wav");
+const contactSound = new Audio("./assets/contact.wav");
 const coverhide = document.querySelector(".cover-hide");
 const coverhide2 = document.querySelector(".cover-hide2");
 const hide = document.querySelector(".hide");
