@@ -10,7 +10,7 @@
 :root {
   --bg-header: rgba(3, 7, 18, 0.4);
   --bg-color-main: rgb(3 7 18);
-  --bg-education-card: rgb(8 15 35);
+  --bg-education-card: #141414;
   --bg-skill-card: rgba(0, 0, 0, 0.5);
   --color-logo-slide: #D91656;
   --bg-project-code-button: #f0f4f9;
@@ -520,22 +520,6 @@ header .navbar ul li a {
   position: relative;
 }
 
-/* .education .collages h2::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  margin-top: 12px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: rgba(255, 0, 0, 0.607);
-  transform: scaleX(0);
-  transition: all 0.2s ease-in-out;
-}
-
-.education .collages h2:hover:after {
-  transform: scaleX(1);
-} */
 
 .education .collages .iitm,
 .education .collages .gour {
@@ -807,7 +791,7 @@ header .navbar ul li a {
   border-radius: 12px;
   border: none;
   color: #fff;
-  background-color: rgba(41, 58, 105, 0.808);
+  background: linear-gradient(45deg, #9333ea, transparent);
   transition: all 0.3s ease-in-out;
 }
 
