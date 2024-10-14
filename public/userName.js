@@ -2,7 +2,7 @@
 const usernameinput = document.querySelector("#username-input")
 const userNamebtn = document.querySelector(".userName-btn")
 const DynamicName = document.querySelector(".DynamicName")
-
+const contactform = document.querySelector(".contact-form")
 if (JSON.parse(localStorage.getItem('portfolio')) !== null) {
     document.querySelector('.userName').style.display = 'none'
     document.querySelector('.welcomeMsg').classList.add('welcomeAnimation')
@@ -31,6 +31,7 @@ userNamebtn.addEventListener('click', () => {
 function renderTasks(name) {
     console.log(name.name)
     DynamicName.innerText = name.name
+    contactform.value = name.name.toUpperCase()
 }
 
 
