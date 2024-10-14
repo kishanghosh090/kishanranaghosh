@@ -4,12 +4,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 })
 // Audios
-const loading = new Audio("./assets/landing.mp3");
-const hamSound = new Audio("./assets/ham.wav");
-const contactSound = new Audio("./assets/contact.wav");
-const waterDrop = new Audio("./assets/waterDrop.mp3");
-const tok = new Audio("./assets/tok.mp3");
-const gotoTop = new Audio("./assets/GotoTOP.mp3");
+const loading = new Audio("./audio/landing.mp3");
+const hamSound = new Audio("./audio/ham.wav");
+const contactSound = new Audio("./audio/contact.wav");
+const waterDrop = new Audio("./audio/waterDrop.mp3");
+const tok = new Audio("./audio/tok.mp3");
+const gotoTop = new Audio("./audio/GotoTOP.mp3");
 // variables
 const coverhide = document.querySelector(".cover-hide");
 const coverhide2 = document.querySelector(".cover-hide2");
@@ -105,10 +105,6 @@ crossProject.addEventListener("click", () => {
 herocontact.addEventListener("click", () => {
   contactSound.play();
 })
-// setTimeout(() => {
-
-// }, 700)
-
 
 crosswlc.addEventListener('click', () => {
   document.querySelector('.welcomeMsg').classList.remove('welcomeAnimation')
