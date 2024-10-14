@@ -18,6 +18,13 @@
 
 <body>
   <div class="loader"><img src="./assets/loader.gif" alt=""></div>
+  <div class="userName">
+    <div class="username-container">
+      <p>Enter Your Name</p>
+      <input type="text" placeholder="Enter your name" id="username-input">
+      <button class="userName-btn">Done</button>
+    </div>
+  </div>
   <!-- navbar start -->
   <header id="home">
     <div class="cover cover-hide"></div>
@@ -42,7 +49,11 @@
 
   <!-- hero section start -->
   <section class="hero" id="hero">
-    <div class="welcomeMsg"><i class="fa-solid fa-xmark cross-wlc"></i><span>Welcome to my portfolio</span></div>
+
+    <div class="welcomeMsg">
+      <div class="username"><span>hello, </span><span class="DynamicName"></span></div>
+      <i class="fa-solid fa-xmark cross-wlc"></i><span>Welcome to my portfolio</span>
+    </div>
     <div class="cross cross-hide cross-project"><i class='bx bxs-right-arrow-square'></i></div>
     <div class="project project-toggle">
       <div class="cards">
@@ -235,6 +246,7 @@
   </footer>
   <!-- footer end-->
 </body>
+<script src="./userName.js"></script>
 <script src="./script.js"></script>
 <script src="./index.js"></script>
 

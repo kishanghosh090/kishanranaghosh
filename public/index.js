@@ -30,6 +30,14 @@ const crosswlc = document.querySelector('.cross-wlc')
 const herocontact = document.querySelector(".hero-contact")
 const arrow = document.querySelector(".arrow")
 // use varibales
+
+
+
+
+
+
+
+
 ham.addEventListener("click", () => {
   hamSound.play();
   coverhide.classList.toggle("cover-hide");
@@ -97,9 +105,9 @@ crossProject.addEventListener("click", () => {
 herocontact.addEventListener("click", () => {
   contactSound.play();
 })
-setTimeout(() => {
-  document.querySelector('.welcomeMsg').classList.add('welcomeAnimation')
-}, 700)
+// setTimeout(() => {
+
+// }, 700)
 
 
 crosswlc.addEventListener('click', () => {
