@@ -1,3 +1,5 @@
+/** @format */
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +14,7 @@
   --bg-color-main: rgb(3 7 18);
   --bg-education-card: #141414;
   --bg-skill-card: rgba(0, 0, 0, 0.5);
-  --color-logo-slide: #D91656;
+  --color-logo-slide: #d91656;
   --bg-project-code-button: #f0f4f9;
 }
 
@@ -50,11 +52,12 @@ body {
 .username-container {
   background-color: #262626;
   padding: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   border-radius: 10px;
   border: 2px solid orange;
   transition: all 0.4s ease-in-out;
-
 }
 
 .username-container p {
@@ -65,7 +68,6 @@ body {
 .username-container input {
   padding: 10px;
   font-size: 16px;
-
 }
 
 .username-container input:active {
@@ -81,7 +83,7 @@ body {
   color: #ffff;
   font-weight: 700;
 }
-.hidden{
+.hidden {
   display: none;
 }
 .userName-hide {
@@ -99,7 +101,7 @@ body::-webkit-scrollbar {
 /* welcome message */
 .welcomeMsg {
   position: absolute;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   color: #212121;
   background-color: #ffff;
   z-index: 99900;
@@ -119,7 +121,6 @@ body::-webkit-scrollbar {
 
 .welcomeAnimation {
   transform: scale(1) translateY(0px);
-
 }
 
 /* navbar start */
@@ -153,7 +154,6 @@ header h1 {
   transition: all 0.4s ease-in-out;
   transform: rotate(-5deg);
   animation: upDown 1s forwards;
-
 }
 
 @keyframes upDown {
@@ -265,7 +265,6 @@ header .navbar ul li a {
 }
 
 /* navbar end */
-
 
 /* hero section start */
 .hero {
@@ -388,9 +387,11 @@ header .navbar ul li a {
 .gradient {
   height: 75vh;
   width: 1000px;
-  background-image: radial-gradient(closest-side,
-      rgba(199, 44, 234, 0.21),
-      rgb(3 7 18));
+  background-image: radial-gradient(
+    closest-side,
+    rgba(199, 44, 234, 0.21),
+    rgb(3 7 18)
+  );
   position: absolute;
   right: 100px;
 }
@@ -436,7 +437,6 @@ header .navbar ul li a {
   font-family: "Fira Mono", monospace;
 }
 
-
 .hero .hero-main .info .hero-contact {
   width: 115px;
   height: 40px;
@@ -455,18 +455,20 @@ header .navbar ul li a {
 }
 
 .hero .hero-main .info .hero-contact::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
-  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(255, 94, 247, 1) 17.8%,
+    rgba(2, 245, 255, 1) 100.2%
+  );
   filter: blur(15px);
   z-index: -1;
   position: absolute;
   left: 0;
   top: 0;
 }
-
-
 
 .hero .hero-main .info .hero-contact a {
   color: #fff;
@@ -547,8 +549,6 @@ header .navbar ul li a {
   border-radius: 50%;
 }
 
-
-
 /* hero section end */
 
 /* education section start */
@@ -573,7 +573,6 @@ header .navbar ul li a {
   transition: all 0.4s ease-out;
   position: relative;
 }
-
 
 .education .collages .iitm,
 .education .collages .gour {
@@ -607,7 +606,6 @@ header .navbar ul li a {
   position: relative;
 }
 
-
 .education .collages .gour .img img {
   height: 25rem;
   max-width: 33rem;
@@ -629,11 +627,7 @@ header .navbar ul li a {
   font-family: "Fira Mono", monospace;
 }
 
-
 /* education section end */
-
-
-
 
 /* about section start */
 .about {
@@ -652,17 +646,20 @@ header .navbar ul li a {
 .gradient-about {
   height: 350px;
   width: 1000px;
-  background-image: radial-gradient(closest-side, rgba(199, 44, 234, 0.21), rgb(3 7 18));
+  background-image: radial-gradient(
+    closest-side,
+    rgba(199, 44, 234, 0.21),
+    rgb(3 7 18)
+  );
   position: absolute;
   right: 100px;
   top: 449px;
 }
 
 .about .aboutHeading h2 {
-  color: #FFF;
+  color: #fff;
   font-size: 3rem;
   font-family: "Fira Mono", monospace;
-
 }
 
 .about .aboutDescription {
@@ -682,7 +679,6 @@ header .navbar ul li a {
   max-width: 70%;
 }
 
-
 .about .skills .skill {
   background-color: var(--bg-skill-card);
   height: 10rem;
@@ -696,7 +692,8 @@ header .navbar ul li a {
   gap: 2rem;
   border: 2px dotted;
   font-family: "Fira Mono", monospace;
-  box-shadow: rgba(85, 85, 98, 0.25) 0px 30px 60px -12px inset, rgba(180, 172, 172, 0.3) 0px 18px 36px -18px inset;
+  box-shadow: rgba(85, 85, 98, 0.25) 0px 30px 60px -12px inset,
+    rgba(180, 172, 172, 0.3) 0px 18px 36px -18px inset;
   animation: animateViewleft linear;
   animation-timeline: view();
   animation-range: entry 0 cover 40%;
@@ -714,8 +711,7 @@ header .navbar ul li a {
 
 .about .skills .skill:hover {
   transform: rotateY(10deg);
-  box-shadow: 0 0 12px #04fffb,
-    0 0 25px #04fffb;
+  box-shadow: 0 0 12px #04fffb, 0 0 25px #04fffb;
 }
 
 .about .skills .skill i {
@@ -770,10 +766,7 @@ header .navbar ul li a {
   color: rgb(27, 99, 200);
 }
 
-
 /* about section end */
-
-
 
 /* contact section start */
 .contactme {
@@ -850,19 +843,16 @@ header .navbar ul li a {
 }
 
 .contactme .container form button:hover {
-  background-color: rgba(82, 122, 215, 0.808)
+  background-color: rgba(82, 122, 215, 0.808);
 }
 
-
-@media(max-width: 641px) {
+@media (max-width: 641px) {
   .contactme h2 {
     font-size: 2.1rem;
   }
 
   .contactme .container {
-
     align-items: flex-start;
-
   }
 
   .contactme .container form input {
@@ -880,10 +870,9 @@ header .navbar ul li a {
   .contactme .container form button {
     width: 52%;
   }
-
 }
 
-@media(max-height: 660px) {
+@media (max-height: 660px) {
   .contactme {
     height: 117vh;
   }
@@ -891,6 +880,51 @@ header .navbar ul li a {
 
 /* contact section end */
 
+/* resetUserName start */
+.resetUserName {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color-main);
+  color: #fff;
+  font-family: "Fira Mono", monospace;
+  border-top: 1px solid;
+}
+.resetUserName .resetUserName-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border: 2px dotted;
+}
+
+.resetUserName .resetUserName-btn{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Fira Mono", monospace;
+  width: 40%;
+  height: 2rem;
+  border-radius: 12px;
+  border: none;
+  color: #fff;
+  background: linear-gradient(45deg, #ea3333, transparent);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.7s ease-in-out;
+}
+
+.resetUserName a:hover {
+  transition: all 0.4s ease-in-out;
+  background: linear-gradient(45deg, transparent,#ea3333);
+}
+
+/* resetUserName end */
 
 /* footer start */
 
@@ -926,7 +960,6 @@ header .navbar ul li a {
 .footer .details .img {
   display: flex;
   align-items: center;
-
 }
 
 .footer .details .img span {
@@ -940,6 +973,5 @@ header .navbar ul li a {
   border-radius: 50%;
   margin-right: 1rem;
 }
-
 
 /* footer end */

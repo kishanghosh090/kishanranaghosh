@@ -1,253 +1,327 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kishan's portfolio</title>
+    <link rel="shortcut icon" href="./assets/kishan.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>kishan's portfolio</title>
-  <link rel="shortcut icon" href="./assets/kishan.ico" type="image/x-icon">
-  <link rel="stylesheet" href="index.css" />
-  <link rel="stylesheet" href="responsive.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body>
-  <div class="loader"><img src="./assets/loader.gif" alt=""></div>
-  <div class="userName hidden">
-    <div class="username-container">
-      <p>Enter Your Name</p>
-      <input type="text" placeholder="Enter your name" id="username-input">
-      <button class="userName-btn">let's go</button>
-    </div>
-  </div>
-  <!-- navbar start -->
-  <header id="home">
-    <div class="cover cover-hide"></div>
-    <div class="cover2 cover-hide2"></div>
-    <h1 id="nameAnimate"><span>Kishan Rana</span> <span>Ghosh</span></h1>
-    <nav class="navbar">
-      <ul class="hide">
-        <li class="home"><a href="#hero">Home</a></li>
-        <li class="aboutme"><a href="#about">About</a></li>
-        <li class="Projects"><a href="#hero">Projects</a></li>
-        <li class="contactME"><a href="#contactme">Contact Me</a></li>
-        <li class="linkedin"><a href="https://www.linkedin.com/in/kishan-rana-ghosh-8b95832b9/"><i
-              class='bx bxl-linkedin-square'></i>linkedin</a></li>
-      </ul>
-    </nav>
-    <div class="ham ham-ani">
-      <div class="div1 div-rotate1"></div>
-      <div class="div2 div-rotate2"></div>
-    </div>
-  </header>
-  <!-- navbar end -->
-
-  <!-- hero section start -->
-  <section class="hero" id="hero">
-
-    <div class="welcomeMsg">
-      <div class="username"><span>Hello, </span><span class="DynamicName"></span></div>
-      <i class="fa-solid fa-xmark cross-wlc"></i><span>Welcome to my portfolio</span>
-    </div>
-    <div class="cross cross-hide cross-project"><i class='bx bxs-right-arrow-square'></i></div>
-    <div class="project project-toggle">
-      <div class="cards">
-        <div class="card">
-          <h3>1st-Year Projects</h3>
-          <h2>Responsive web design (portfolio) </h2>
-          <img src="./assets/pontfolioUI.png" alt="">
-
-          <p>
-            this is a simple and attractive portfolio ui with responsive design
-          </p>
-          <button><a href="https://github.com/kishanghosh090/kishan-UI" target="_blank">Get Code</a></button>
-        </div>
-        <div class="card">
-          <h2>Gemini UI (Gemini API)</h2>
-          <img src="./assets/gemini-clone.png" alt="">
-          <p>
-            This project is a clone of the Gemini UI, designed to provide users with an intuitive and
-            responsive interface Utilizing the Gemini API, the application offers real-time data, the interface is
-            crafted to mirror the
-            original Gemini
-            platform while incorporating unique enhancements for improved usability. Explore the power of
-            cryptocurrency trading
-            with this sleek, functional, and visually appealing clone!
-          </p>
-          <button><a href="https://github.com/kishanghosh090/gemini" target="_blank">Get Code</a></button>
-        </div>
+  <body>
+    <div class="loader"><img src="./assets/loader.gif" alt="" /></div>
+    <div class="userName hidden">
+      <div class="username-container">
+        <p>Enter Your Name</p>
+        <input type="text" placeholder="Enter your name" id="username-input" />
+        <button class="userName-btn">let's go</button>
       </div>
     </div>
-    <div class="gradient"></div>
-    <div class="hero-main">
-      <div class="info">
-        <h3>A Full Stack Developer</h3>
-        <div class="name">Kishan Rana Ghosh</div>
-        <div class="para">
-          I am a Developer, and I love to drink coffee, I live in Malda.
-          Passinate React JS developer with 2 year of experience, dedicated to
-          make impressive web experience and solving complex challenges.
-        </div>
-        <div class="hero-contact"><a href="#contactme">Contact Me</a></div>
+    <!-- navbar start -->
+    <header id="home">
+      <div class="cover cover-hide"></div>
+      <div class="cover2 cover-hide2"></div>
+      <h1 id="nameAnimate"><span>Kishan Rana</span> <span>Ghosh</span></h1>
+      <nav class="navbar">
+        <ul class="hide">
+          <li class="home"><a href="#hero">Home</a></li>
+          <li class="aboutme"><a href="#about">About</a></li>
+          <li class="Projects"><a href="#hero">Projects</a></li>
+          <li class="contactME"><a href="#contactme">Contact Me</a></li>
+          <li class="linkedin">
+            <a href="https://www.linkedin.com/in/kishan-rana-ghosh-8b95832b9/"
+              ><i class="bx bxl-linkedin-square"></i>linkedin</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="ham ham-ani">
+        <div class="div1 div-rotate1"></div>
+        <div class="div2 div-rotate2"></div>
       </div>
-      <img src="./assets/download.svg" alt="" class="iphone" />
-      <div class="myImg">
-        <img src="./assets/kishan.jpeg" alt="" />
-        <!-- <div class="imgName">
+    </header>
+    <!-- navbar end -->
+
+    <!-- hero section start -->
+    <section class="hero" id="hero">
+      <div class="welcomeMsg">
+        <div class="username">
+          <span>Hello, </span><span class="DynamicName"></span>
+        </div>
+        <i class="fa-solid fa-xmark cross-wlc"></i
+        ><span>Welcome to my portfolio</span>
+      </div>
+      <div class="cross cross-hide cross-project">
+        <i class="bx bxs-right-arrow-square"></i>
+      </div>
+      <div class="project project-toggle">
+        <div class="cards">
+          <div class="card">
+            <h3>1st-Year Projects</h3>
+            <h2>Responsive web design (portfolio)</h2>
+            <img src="./assets/pontfolioUI.png" alt="" />
+
+            <p>
+              this is a simple and attractive portfolio ui with responsive
+              design
+            </p>
+            <button>
+              <a
+                href="https://github.com/kishanghosh090/kishan-UI"
+                target="_blank"
+                >Get Code</a
+              >
+            </button>
+          </div>
+          <div class="card">
+            <h2>Gemini UI (Gemini API)</h2>
+            <img src="./assets/gemini-clone.png" alt="" />
+            <p>
+              This project is a clone of the Gemini UI, designed to provide
+              users with an intuitive and responsive interface Utilizing the
+              Gemini API, the application offers real-time data, the interface
+              is crafted to mirror the original Gemini platform while
+              incorporating unique enhancements for improved usability. Explore
+              the power of cryptocurrency trading with this sleek, functional,
+              and visually appealing clone!
+            </p>
+            <button>
+              <a href="https://github.com/kishanghosh090/gemini" target="_blank"
+                >Get Code</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="gradient"></div>
+      <div class="hero-main">
+        <div class="info">
+          <h3>A Full Stack Developer</h3>
+          <div class="name">Kishan Rana Ghosh</div>
+          <div class="para">
+            I am a Developer, and I love to drink coffee, I live in Malda.
+            Passinate React JS developer with 2 year of experience, dedicated to
+            make impressive web experience and solving complex challenges.
+          </div>
+          <div class="hero-contact"><a href="#contactme">Contact Me</a></div>
+        </div>
+        <img src="./assets/download.svg" alt="" class="iphone" />
+        <div class="myImg">
+          <img src="./assets/kishan.jpeg" alt="" />
+          <!-- <div class="imgName">
             <i class="fa-regular fa-face-smile-wink"></i
             ><span>Kishan Rana Ghosh</span>
           </div> -->
-        <div class="mail">
-          <span>kishanghosh090@gmail.com</span>
+          <div class="mail">
+            <span>kishanghosh090@gmail.com</span>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- hero section end -->
-  <!-- education section start -->
-  <section class="education" id="education">
-    <div class="collages">
-      <h2>
-        My Education <span><i class="fa-solid fa-graduation-cap"></i></span>
-      </h2>
-      <div class="iitm">
-        <div class="img">
-          <img src="./assets/iitm.jpg" alt="" />
-        </div>
+    </section>
+    <!-- hero section end -->
+    <!-- education section start -->
+    <section class="education" id="education">
+      <div class="collages">
+        <h2>
+          My Education <span><i class="fa-solid fa-graduation-cap"></i></span>
+        </h2>
+        <div class="iitm">
+          <div class="img">
+            <img src="./assets/iitm.jpg" alt="" />
+          </div>
 
-        <div class="iitmData">
-          I'm a dedicated college student of IITM with a passion for exploring
-          data-driven solution! As a college student passionate about data
-          science, I've been exploring various projects.
+          <div class="iitmData">
+            I'm a dedicated college student of IITM with a passion for exploring
+            data-driven solution! As a college student passionate about data
+            science, I've been exploring various projects.
+          </div>
+        </div>
+        <div class="gour gour-res">
+          <div class="gourData">
+            A dedicated 1st-year Computer Science student with a growing
+            expertise in software development and problem-solving. Proficient in
+            technologies like javascript, Python, and Linux systems, with
+            hands-on experience in various projects. Eager to expand my skills
+            and contribute to cutting-edge technological solutions.
+          </div>
+          <div class="img">
+            <img src="./assets/gour.jpg" alt="" />
+          </div>
         </div>
       </div>
-      <div class="gour gour-res">
-        <div class="gourData">
-          A dedicated 1st-year Computer Science student with a growing expertise in software development and
-          problem-solving. Proficient in technologies like javascript, Python, and Linux systems, with hands-on
-          experience in various projects. Eager to expand my skills and contribute to cutting-edge technological
-          solutions.
-
+    </section>
+    <!-- education section end -->
+    <!-- about section start -->
+    <section class="about" id="about">
+      <div class="gradient-about"></div>
+      <div class="aboutHeading">
+        <h2>About Me and My Skills <i class="fa-solid fa-user"></i></h2>
+      </div>
+      <div class="aboutDescription">
+        A Moderate Skill Web Developer With 2 Year Of Web Development Experience
+        In Design, Development,Optimization Of WebSites And Provide
+        Best-in-class Solutions.I am also a AI enthusiast
+      </div>
+      <div class="skills">
+        <div class="skill">
+          <div><i class="fa-brands fa-html5"></i></div>
+          <span> HTML5</span>
         </div>
-        <div class="img">
-          <img src="./assets/gour.jpg" alt="" />
+        <div class="skill">
+          <div><i class="fa-brands fa-css3-alt"></i></div>
+          <span> CSS</span>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- education section end -->
-  <!-- about section start -->
-  <section class="about" id="about">
-    <div class="gradient-about"></div>
-    <div class="aboutHeading">
-      <h2> About Me and My Skills <i class="fa-solid fa-user"></i></h2>
-    </div>
-    <div class="aboutDescription">
-      A Moderate Skill Web Developer With 2 Year Of Web Development Experience
-      In Design, Development,Optimization Of WebSites And Provide
-      Best-in-class Solutions.I am also a AI enthusiast
-    </div>
-    <div class="skills">
-      <div class="skill">
-        <div><i class="fa-brands fa-html5"></i></div>
-        <span> HTML5</span>
-      </div>
-      <div class="skill">
-        <div><i class="fa-brands fa-css3-alt"></i></div>
-        <span> CSS</span>
-      </div>
-      <div class="skill">
-        <div><i class="fa-brands fa-js"></i></div>
-        <span> Java Script</span>
-      </div>
-      <div class="skill">
-        <div><i class="bx bxl-nodejs"></i></div>
-        <span> NodeJS</span>
-      </div>
-      <div class="skill">
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256"
-            width="50px" height="50px" fill-rule="nonzero">
-            <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-              stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-              font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-              <g transform="scale(5.12,5.12)">
-                <path
-                  d="M49.729,11h-0.85c-1.051,0 -2.041,0.49 -2.68,1.324l-8.7,11.377l-8.7,-11.377c-0.637,-0.834 -1.628,-1.324 -2.678,-1.324h-0.85l10.971,14.346l-11.206,14.654h0.85c1.051,0 2.041,-0.49 2.679,-1.324l8.935,-11.684l8.935,11.684c0.638,0.834 1.628,1.324 2.679,1.324h0.85l-11.206,-14.654zM21.289,34.242c-2.554,3.881 -7.582,5.87 -12.389,4.116c-4.229,-1.543 -6.9,-5.747 -6.9,-10.249v-1.109h12v0h11v-4.134c0,-6.505 -4.818,-12.2 -11.295,-12.809c-7.432,-0.699 -13.705,5.153 -13.705,12.443v5.573c0,5.371 3.215,10.364 8.269,12.183c6.603,2.376 13.548,-1.17 15.896,-7.256v0h-0.638c-0.911,0 -1.738,0.481 -2.238,1.242zM2,22.5c0,-5.79 4.71,-10.5 10.5,-10.5c5.79,0 10.5,4.71 10.5,10.5v2.5h-21z">
-                </path>
+        <div class="skill">
+          <div><i class="fa-brands fa-js"></i></div>
+          <span> Java Script</span>
+        </div>
+        <div class="skill">
+          <div><i class="bx bxl-nodejs"></i></div>
+          <span> NodeJS</span>
+        </div>
+        <div class="skill">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0,0,256,256"
+              width="50px"
+              height="50px"
+              fill-rule="nonzero"
+            >
+              <g
+                fill="#000000"
+                fill-rule="nonzero"
+                stroke="none"
+                stroke-width="1"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+                stroke-dasharray=""
+                stroke-dashoffset="0"
+                font-family="none"
+                font-weight="none"
+                font-size="none"
+                text-anchor="none"
+                style="mix-blend-mode: normal"
+              >
+                <g transform="scale(5.12,5.12)">
+                  <path
+                    d="M49.729,11h-0.85c-1.051,0 -2.041,0.49 -2.68,1.324l-8.7,11.377l-8.7,-11.377c-0.637,-0.834 -1.628,-1.324 -2.678,-1.324h-0.85l10.971,14.346l-11.206,14.654h0.85c1.051,0 2.041,-0.49 2.679,-1.324l8.935,-11.684l8.935,11.684c0.638,0.834 1.628,1.324 2.679,1.324h0.85l-11.206,-14.654zM21.289,34.242c-2.554,3.881 -7.582,5.87 -12.389,4.116c-4.229,-1.543 -6.9,-5.747 -6.9,-10.249v-1.109h12v0h11v-4.134c0,-6.505 -4.818,-12.2 -11.295,-12.809c-7.432,-0.699 -13.705,5.153 -13.705,12.443v5.573c0,5.371 3.215,10.364 8.269,12.183c6.603,2.376 13.548,-1.17 15.896,-7.256v0h-0.638c-0.911,0 -1.738,0.481 -2.238,1.242zM2,22.5c0,-5.79 4.71,-10.5 10.5,-10.5c5.79,0 10.5,4.71 10.5,10.5v2.5h-21z"
+                  ></path>
+                </g>
               </g>
-            </g>
-          </svg>
+            </svg>
+          </div>
+          <span>ExpressJS</span>
         </div>
-        <span>ExpressJS</span>
+        <div class="skill">
+          <div><i class="bx bxl-mongodb"></i></div>
+          <span>MongoDB</span>
+        </div>
+        <div class="skill">
+          <div><i class="fa-brands fa-square-git"></i></div>
+          <span>Git</span>
+        </div>
+        <div class="skill">
+          <div><i class="fa-brands fa-python"></i></div>
+          <span> Python</span>
+        </div>
+        <div class="skill">
+          <div><i class="bx bxl-c-plus-plus"></i></div>
+          <span> C++</span>
+        </div>
       </div>
-      <div class="skill">
-        <div><i class="bx bxl-mongodb"></i></div>
-        <span>MongoDB</span>
+    </section>
+    <!-- about section end -->
+    <!-- Contact section start  -->
+    <section class="contactme" id="contactme">
+      <h2>Contact Me <i class="fa-solid fa-comment"></i></h2>
+      <div class="container">
+        <form id="contactForm">
+          <label for="name">Name</label>
+          <input
+            class="contact-form"
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="example@gmail.com"
+            required
+          />
+          <label for="message">Drop your message for kishan</label>
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <div id="responseMessage"></div>
       </div>
-      <div class="skill">
-        <div><i class="fa-brands fa-square-git"></i></div>
-        <span>Git</span>
+    </section>
+    <!-- contact section end -->
+    <section class="resetUserName">
+      <div class="resetUserName-container">
+        <p>Do you want to reset your name?</p>
+        <a href="#hero" class="resetUserName-btn">Reset</a>
       </div>
-      <div class="skill">
-        <div><i class="fa-brands fa-python"></i></div>
-        <span> Python</span>
+    </section>
+    <!-- footer start  -->
+    <footer class="footer">
+      <div class="arrow">
+        <a href="#hero"><i class="bx bxs-up-arrow-circle"></i></a>
       </div>
-      <div class="skill">
-        <div><i class="bx bxl-c-plus-plus"></i></div>
-        <span> C++</span>
+      <div class="socials">
+        <div>
+          <a href="https://www.linkedin.com/in/kishan-rana-ghosh-8b95832b9/"
+            ><i class="bx bxl-linkedin-square"></i>linkedin</a
+          >
+        </div>
+        <div>
+          <a href="https://github.com/kishanghosh090"
+            ><i class="bx bxl-github"></i>github</a
+          >
+        </div>
       </div>
-    </div>
-  </section>
-  <!-- about section end -->
-  <!-- Contact section start  -->
-  <section class="contactme" id="contactme">
-    <h2>Contact Me <i class="fa-solid fa-comment"></i></h2>
-    <div class="container">
-      <form id="contactForm">
-        <label for="name">Name</label>
-        <input class="contact-form" type="text" name="name" placeholder="Your Name" required>
-        <label for="email">Email</label>
-        <input type="email" name="email" placeholder="example@gmail.com" required>
-        <label for="message">Drop your message for kishan</label>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-      <div id="responseMessage"></div>
-    </div>
-  </section>
-  <!-- contact section end -->
-
-  <!-- footer start  -->
-  <footer class="footer">
-    <div class="arrow">
-      <a href="#hero"><i class='bx bxs-up-arrow-circle'></i></a>
-    </div>
-    <div class="socials">
-      <div><a href="https://www.linkedin.com/in/kishan-rana-ghosh-8b95832b9/"><i
-            class='bx bxl-linkedin-square'></i>linkedin</a></div>
-      <div><a href="https://github.com/kishanghosh090"><i class='bx bxl-github'></i>github</a></div>
-    </div>
-    <div class="details">
-      <div class="img">
-        <img src="./assets/kishan.jpeg" alt="kishan image" />
-        <span>Kishan Rana Ghosh</span>
+      <div class="details">
+        <div class="img">
+          <img src="./assets/kishan.jpeg" alt="kishan image" />
+          <span>Kishan Rana Ghosh</span>
+        </div>
       </div>
-    </div>
-    <div>
-      <p>Copyright © 2024 kishanRanaGhosh.com</p>
-      <div class="mail">kishanghosh090@gmail.com</div>
-    </div>
-  </footer>
-  <!-- footer end-->
-</body>
-<script src="./userName.js"></script>
-<script src="./script.js"></script>
-<script src="./index.js"></script>
-
+      <div>
+        <p>Copyright © 2024 kishanRanaGhosh.com</p>
+        <div class="mail">kishanghosh090@gmail.com</div>
+      </div>
+    </footer>
+    <!-- footer end-->
+  </body>
+  <script src="./userName.js"></script>
+  <script src="./script.js"></script>
+  <script src="./index.js"></script>
 </html>
