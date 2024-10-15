@@ -51,10 +51,10 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   //reset user name
   function resetUserName() {
-    localStorage.removeItem("portfolio");
-     contactform.value = ''
     document.querySelector(".userName").classList.remove("userName-hide");
     document.querySelector(".welcomeMsg").classList.remove("welcomeAnimation");
+    contactform.value = "";
+    localStorage.removeItem("portfolio");
   }
 });
 // user name innput end
