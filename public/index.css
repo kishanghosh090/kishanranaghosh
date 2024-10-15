@@ -73,18 +73,23 @@ body {
 .username-container input:active {
   border: 2px solid orange;
 }
-
+.userName .buttons {
+  margin-top: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .username-container button {
   padding: 10px;
-  font-size: 15px;
+  font-size: 17px;
   border: navajowhite;
   border-radius: 10px;
   background: #792bc2;
   color: #ffff;
   font-weight: 700;
 }
-.hidden {
-  display: none;
+.userName .buttons button:last-child{
+  background: #15cb4f;
 }
 .userName-hide {
   transform: scale(4) translateY(-1000px);
@@ -103,6 +108,11 @@ body::-webkit-scrollbar {
   position: absolute;
   font-family: "Manrope", sans-serif;
   color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  flex-direction: column;
   background-color: #ffff;
   z-index: 99900;
   padding: 40px;
@@ -250,6 +260,17 @@ header .navbar ul .linkedin {
   background-color: rgb(13, 28, 68);
   padding: 10px;
   border-radius: 10px;
+}
+header .navbar ul .resetUserName-btn1 {
+  height: auto;
+  width: auto;
+  padding: 10px;
+  background-color: #cf1e1e;
+  border-radius: 10px;
+  font-weight: 700;
+}
+header .navbar ul li:last-child:hover {
+  background-color: transparent;
 }
 
 header .navbar ul .linkedin a i {
@@ -901,7 +922,7 @@ header .navbar ul li a {
   border: 2px dotted;
 }
 
-.resetUserName .resetUserName-btn{
+.resetUserName-btn2 {
   text-decoration: none;
   color: #fff;
   font-weight: 700;
@@ -921,7 +942,7 @@ header .navbar ul li a {
 
 .resetUserName a:hover {
   transition: all 0.4s ease-in-out;
-  background: linear-gradient(45deg, transparent,#ea3333);
+  background: linear-gradient(45deg, transparent, #ea3333);
 }
 
 /* resetUserName end */
@@ -973,5 +994,7 @@ header .navbar ul li a {
   border-radius: 50%;
   margin-right: 1rem;
 }
-
+.hidden {
+  display: none;
+}
 /* footer end */
