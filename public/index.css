@@ -81,7 +81,9 @@ body {
   color: #ffff;
   font-weight: 700;
 }
-
+.hidden{
+  display: none;
+}
 .userName-hide {
   transform: scale(4) translateY(-1000px);
 }

@@ -1,13 +1,17 @@
 // user name input start
+
+document.addEventListener('DOMContentLoaded', function () {
+const userNameContainer = document.querySelector('.userName')
 const usernameinput = document.querySelector("#username-input")
 const userNamebtn = document.querySelector(".userName-btn")
 const DynamicName = document.querySelector(".DynamicName")
 const contactform = document.querySelector(".contact-form")
+
 if (JSON.parse(localStorage.getItem('portfolio')) !== null) {
     document.querySelector('.userName').style.display = 'none'
     document.querySelector('.welcomeMsg').classList.add('welcomeAnimation')
-    // renderTasks()
 }
+userNameContainer.classList.remove('hidden')// unhide the user name container
 let userName = JSON.parse(localStorage.getItem('portfolio')) || []
 userName.forEach((name) => {
     renderTasks(name)
@@ -39,8 +43,5 @@ function saveTasks() {
     localStorage.setItem('portfolio', JSON.stringify(userName))
 }
 
-
-
-
-
+})
 // user name innput end

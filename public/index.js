@@ -1,9 +1,7 @@
 // loader
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('.loader').setAttribute('class', 'loader-hide');
-
-})
-// Audios
+  // Audios
 const loading = new Audio("./audio/landing.mp3");
 const hamSound = new Audio("./audio/ham.wav");
 const contactSound = new Audio("./audio/contact.wav");
@@ -113,4 +111,6 @@ crosswlc.addEventListener('click', () => {
 
 arrow.addEventListener('click', () => {
   gotoTop.play();
+})
+
 })
