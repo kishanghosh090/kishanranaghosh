@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const contactform = document.querySelector(".contact-form");
   const resetUserNamebtn = document.querySelector(".resetUserName-btn");
   if (JSON.parse(localStorage.getItem("portfolio")) !== null) {
-    document.querySelector(".userName").style.display = "none";
+    document.querySelector(".userName").classList.add("userName-hide");
     document.querySelector(".welcomeMsg").classList.add("welcomeAnimation");
   }
   userNameContainer.classList.remove("hidden"); // unhide the user name container
