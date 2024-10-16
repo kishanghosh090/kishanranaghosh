@@ -26,11 +26,7 @@
         transition: all 0.3s ease-out;
     }
 
-    .ham div {
-        height: 3px;
-        width: 30px;
-        background-color: #fff;
-    }
+    
 
     .div-rotate1 {
         transform: rotate(0deg);
