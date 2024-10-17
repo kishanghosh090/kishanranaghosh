@@ -21,6 +21,7 @@ const contactme = document.querySelector(".contactme");
 const footer = document.querySelector(".footer");
 const bxuparrowcircle = document.querySelectorAll(".bx-Light");
 const iphone = document.querySelector(".iphone");
+
 //variable for light and dark mode
 
 let LDArr = JSON.parse(localStorage.getItem("Light-Dark")) || [];
@@ -33,6 +34,7 @@ if (LDArr[0] == undefined) {
 }
 
 LDButton.addEventListener("click", () => {
+  new Audio("./audio/LDModeChange.mp3").play();
   if (LDArr[0] == undefined) {
     LDArr[0] = 1;
 

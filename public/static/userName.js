@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const skipButton = document.querySelector(".skip");
 
   skipButton.addEventListener("click", () => {
+    new Audio("./audio/LDModeChange.mp3").play();
     document.querySelector(".userName").classList.add("userName-hide");
     document.querySelector(".welcomeMsg").classList.add("welcomeAnimation");
   });
@@ -41,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
   userNamebtn.addEventListener("click", () => {
     const nameText = usernameinput.value.trim();
     if (nameText === "") return;
+    new Audio("./audio/landing.mp3").play();
     const name = {
       id: Date.now(),
       name: nameText,
