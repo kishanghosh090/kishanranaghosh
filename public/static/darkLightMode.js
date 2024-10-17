@@ -54,7 +54,7 @@ LDButton.addEventListener("click", () => {
 function toLightMode() {
   ball.classList.add("ball-ani");
   body.classList.add("LightMode-body");
-  usernamecontainer.classList.add("LightMode");
+  usernamecontainer.classList.add("LightMode-for-userNamr-container");
   home.classList.add("LightMode");
   div1.classList.add("LightMode-ham");
   div2.classList.add("LightMode-ham");
@@ -62,8 +62,8 @@ function toLightMode() {
   welcomeMsg.classList.add("LightMode-WelcMsg");
   gradient.classList.add("LightMode-gradient");
   edu.classList.add("LightMode-body");
-  iitm.classList.add("LightMode");
-  gour.classList.add("LightMode");
+  iitm.classList.add("LightMode-for-userNamr-container");
+  gour.classList.add("LightMode-for-userNamr-container");
   about.classList.add("LightMode-body");
   aboutHeading.classList.add("LightMode-body");
   gradientabout.classList.add("LightMode-gradient");
@@ -73,14 +73,14 @@ function toLightMode() {
     bx.classList.add("LightMode-body");
   });
   skills.forEach((skill) => {
-    skill.classList.add("LightMode");
+    skill.classList.add("LightMode-for-userNamr-container");
   });
   iphone.setAttribute("src", "./assets/dark.svg");
 }
 function toDarkMode() {
   ball.classList.remove("ball-ani");
   body.classList.remove("LightMode-body");
-  usernamecontainer.classList.remove("LightMode");
+  usernamecontainer.classList.remove("LightMode-for-userNamr-container");
   home.classList.remove("LightMode");
   div1.classList.remove("LightMode-ham");
   div2.classList.remove("LightMode-ham");
@@ -88,8 +88,8 @@ function toDarkMode() {
   welcomeMsg.classList.remove("LightMode-WelcMsg");
   gradient.classList.remove("LightMode-gradient");
   edu.classList.remove("LightMode-body");
-  iitm.classList.remove("LightMode");
-  gour.classList.remove("LightMode");
+  iitm.classList.remove("LightMode-for-userNamr-container");
+  gour.classList.remove("LightMode-for-userNamr-container");
   about.classList.remove("LightMode-body");
 
   aboutHeading.classList.remove("LightMode-body");
@@ -100,7 +100,7 @@ function toDarkMode() {
     bx.classList.remove("LightMode-body");
   });
   skills.forEach((skill) => {
-    skill.classList.remove("LightMode");
+    skill.classList.remove("LightMode-for-userNamr-container");
   });
   iphone.setAttribute("src", "./assets/white.svg");
 }

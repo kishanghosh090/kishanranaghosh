@@ -1,0 +1,89 @@
+/** @format */
+/* // toggle button start*/
+:root {
+  --lightMode-navbar-bg: rgba(240, 244, 249, 0.6);
+  --bg-main: #f0f4f9;
+  --text-main: #1f1f1f;
+}
+.Light-Dark-Mode {
+  z-index: 999999999;
+  position: absolute;
+  /* top: 0; */
+  bottom: -33px;
+  right: 44px;
+}
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: var(--bg-main);
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+
+.ball {
+  background-color: #000;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+  transform: translateX(24px);
+}
+
+.ball-ani {
+  transform: translateX(0);
+}
+/*  toggle button end*/
+
+/* light mode properties */
+
+.LightMode-body {
+  background-color: #ffffff;
+  color: #1f1f1f;
+}
+.LightMode-for-userNamr-container {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 54px 55px,
+    rgba(0, 0, 0, 0.012) 0px -12px 30px, rgba(0, 0, 0, 0.012) 0px 4px 6px,
+    rgba(0, 0, 0, 0.017) 0px 12px 13px, rgba(0, 0, 0, 0.009) 0px -3px 5px;
+}
+.LightMode {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  box-shadow: none;
+}
+.LightMode-ham {
+  background-color: var(--text-main);
+}
+.LightMode-WelcMsg {
+  color: var(--bg-main);
+  background-color: var(--text-main);
+}
+.LightMode-gradient {
+  background-image: radial-gradient(
+    closest-side,
+    rgba(199, 44, 234, 0.21),
+    #fff
+  );
+}

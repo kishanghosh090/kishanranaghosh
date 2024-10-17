@@ -22,8 +22,11 @@ body {
   color: #fff;
   background-color: var(--bg-color-main);
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 
-/* loader */
+/* loader start*/
 .loader {
   position: fixed;
   height: 100vh;
@@ -35,12 +38,17 @@ body {
   justify-content: center;
   align-items: center;
 }
+.loader-hide {
+  display: none;
+}
+/* loader end*/
 
+/* userName input from user section start */
 .userName {
   height: 50vh;
   width: 100%;
+  top: 106px;
   position: fixed;
-  /* background-color: #ffd; */
   z-index: 99999999999999999999;
   display: flex;
   justify-content: center;
@@ -94,16 +102,9 @@ body {
 .userName-hide {
   transform: scale(4) translateY(-1000px);
 }
+/* userName input from user section end */
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
-.loader-hide {
-  display: none;
-}
-
-/* welcome message */
+/* welcome message greeting section start*/
 .welcomeMsg {
   position: absolute;
   font-family: "Manrope", sans-serif;
@@ -132,6 +133,7 @@ body::-webkit-scrollbar {
 .welcomeAnimation {
   transform: scale(1) translateY(0px);
 }
+/* welcome message greeting section end*/
 
 /* navbar start */
 header {
@@ -1007,51 +1009,3 @@ header .navbar ul li a {
   display: none;
 }
 /* footer end */
-.Light-Dark-Mode {
-  z-index: 999999999;
-  position: absolute;
-  /* top: 0; */
-  bottom: -33px;
-  right: 10px;
-}
-.checkbox {
-  opacity: 0;
-  position: absolute;
-}
-
-.checkbox-label {
-  background-color: #fff;
-  width: 50px;
-  height: 26px;
-  border-radius: 50px;
-  position: relative;
-  padding: 5px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.fa-moon {
-  color: #f1c40f;
-}
-
-.fa-sun {
-  color: #f39c12;
-}
-
-.ball {
-  background-color: #000;
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  left: 2px;
-  top: 2px;
-  border-radius: 50%;
-  transition: transform 0.2s linear;
-  transform: translateX(24px);
-}
-
-.ball-ani {
-  transform: translateX(0);
-}
