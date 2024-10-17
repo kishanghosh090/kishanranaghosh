@@ -1,4 +1,4 @@
-const audio = new Audio("./assets/audio.mp3");
+const audio = new Audio("./audio/audio.mp3");
 document.getElementById('contactForm').addEventListener('submit', function (event) {
     event.preventDefault();
 
