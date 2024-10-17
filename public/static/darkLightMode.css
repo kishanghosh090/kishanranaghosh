@@ -6,11 +6,10 @@
   --text-main: #1f1f1f;
 }
 .Light-Dark-Mode {
-  z-index: 999999999;
+  z-index: 999;
   position: absolute;
-  /* top: 0; */
   bottom: -33px;
-  right: 44px;
+  right: 50;
 }
 .checkbox {
   opacity: 0;
