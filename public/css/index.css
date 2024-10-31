@@ -117,11 +117,11 @@ body::-webkit-scrollbar {
   gap: 10px;
   flex-direction: column;
   background-color: #ffff;
-  z-index: 99900;
+  z-index: 9999900;
   padding: 40px;
   left: 10px;
   top: 100px;
-  top: 26%;
+  top: 10px;
   border-radius: 10px;
   transition: all 0.4s ease-in-out;
   transform: scale(0) translateY(800px);

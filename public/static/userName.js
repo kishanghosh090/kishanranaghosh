@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const DynamicName = document.querySelector(".DynamicName");
   const contactform = document.querySelector(".contact-form");
   const skipButton = document.querySelector(".skip");
+  const HTMLPARA = document.querySelector(".para");
 
   skipButton.addEventListener("click", () => {
     new Audio("./audio/LDModeChange.mp3").play();
@@ -76,9 +77,11 @@ document.addEventListener("DOMContentLoaded", function () {
     hamani.classList.toggle("ham-ani");
     divrotate1.classList.toggle("div-rotate1");
     divrotate2.classList.toggle("div-rotate2");
+    HTMLPARA.textContent = "";
     resetUserName();
   });
   resetUserNamebtn2.addEventListener("click", () => {
+    HTMLPARA.textContent = "";
     resetUserName();
   });
   //reset user name
@@ -91,5 +94,8 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".resetUserName").classList.add("hidden");
     localStorage.removeItem("portfolio");
   }
+
+  //test code
 });
+
 // user name innput end
