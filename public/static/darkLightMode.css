@@ -1,6 +1,8 @@
 /** @format */
 /* // toggle button start*/
 :root {
+  --bg-for-LD-toggle-btn: #8ab4f8;
+  --toggelBtn-color: #0e3963;
   --lightMode-navbar-bg: rgba(240, 244, 249, 0.6);
   --bg-main: #f0f4f9;
   --text-main: #1f1f1f;
@@ -8,7 +10,7 @@
 .Light-Dark-Mode {
   z-index: 999;
   position: absolute;
-  bottom: -33px;
+  bottom: -40px;
   right: 50;
 }
 .checkbox {
@@ -17,12 +19,12 @@
 }
 
 .checkbox-label {
-  background-color: var(--bg-main);
-  width: 50px;
-  height: 26px;
+  background-color: var(--bg-for-LD-toggle-btn);
+  width: 62px;
+  height: 35px;
   border-radius: 50px;
   position: relative;
-  padding: 5px;
+  padding: 10px;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -31,6 +33,7 @@
 
 .fa-moon {
   color: #f1c40f;
+  font-size: 20px;
 }
 
 .fa-sun {
@@ -38,15 +41,16 @@
 }
 
 .ball {
-  background-color: #000;
+  background-color: var(--toggelBtn-color);
   width: 22px;
   height: 22px;
   position: absolute;
-  left: 2px;
+  left: 5px;
   top: 2px;
   border-radius: 50%;
   transition: transform 0.2s linear;
-  transform: translateX(24px);
+  transform: translateX(31px);
+  top: 6.4px;
 }
 
 .ball-ani {
