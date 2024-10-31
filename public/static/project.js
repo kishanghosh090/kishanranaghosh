@@ -18,6 +18,21 @@ document.addEventListener("DOMContentLoaded", () => {
     geminiProject.codeLink,
     geminiProject.projectPic
   );
+  //weather APP
+  const weatherApp = {
+    name: "Weather App (API)",
+    description: `Curious about tomorrow's weather? Need to know if it's a good day for soccer practice? Our app is here to help! Just enter your city or , and it'll give you the latest forecast.click get code button to get code of this APP`,
+    codeLink: "https://github.com/kishanghosh090/weatherApp-Project.git",
+    projectPic: "./assets/weatherApp.png",
+  };
+
+  createProject(
+    weatherApp.name,
+    weatherApp.description,
+    weatherApp.codeLink,
+    weatherApp.projectPic
+  );
+
   // portfolio ui
   const portfolioUI = {
     name: "Responsive web design (portfolio)",
@@ -33,6 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
     portfolioUI.codeLink,
     portfolioUI.projectPic
   );
+
   // create project function
   function createProject(name, description, getCodeLink, projectPictures) {
     const cards = document.querySelector(".cards");
