@@ -3,6 +3,15 @@
 // user name input start
 
 document.addEventListener("DOMContentLoaded", function () {
+  //for type annimation variable
+  let clear; // for clearTimeInterval
+  let index = 0;
+  const myPara = `I am a Developer, and I love to drink coffee, I live in Malda. Passinate React JS developer with 2 year of experience, dedicated to make impressive web experience and solving complex challenges.`;
+  const paraArray = Array.from(myPara);
+  const HTMLPARA = document.querySelector(".para");
+  let isValid = true;
+
+  // for userName input and welcome message variable
   const coverhide = document.querySelector(".cover-hide");
   const coverhide2 = document.querySelector(".cover-hide2");
   const hide = document.querySelector(".hide");
@@ -15,10 +24,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const DynamicName = document.querySelector(".DynamicName");
   const contactform = document.querySelector(".contact-form");
   const skipButton = document.querySelector(".skip");
-  const HTMLPARA = document.querySelector(".para");
 
   skipButton.addEventListener("click", () => {
     new Audio("./audio/LDModeChange.mp3").play();
+    writeTextFunction();
     document.querySelector(".userName").classList.add("userName-hide");
     document.querySelector(".welcomeMsg").classList.add("welcomeAnimation");
   });
@@ -27,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const resetUserNamebtn2 = document.querySelector(".resetUserName-btn2");
 
   if (JSON.parse(localStorage.getItem("portfolio")) !== null) {
+    writeTextFunction();
     document.querySelector(".reset-btn-nav").classList.remove("hidden");
 
     document.querySelector(".resetUserName").classList.remove("hidden");
@@ -43,6 +53,11 @@ document.addEventListener("DOMContentLoaded", function () {
   userNamebtn.addEventListener("click", () => {
     const nameText = usernameinput.value.trim();
     if (nameText === "") return;
+    if (isValid) {
+      writeTextFunction();
+    } else {
+      return;
+    }
     new Audio("./audio/landing.mp3").play();
     const name = {
       id: Date.now(),
@@ -65,6 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
     contactform.value = name.name.toUpperCase();
   }
 
+  
   function saveTasks() {
     localStorage.setItem("portfolio", JSON.stringify(userName));
   }
@@ -77,25 +93,38 @@ document.addEventListener("DOMContentLoaded", function () {
     hamani.classList.toggle("ham-ani");
     divrotate1.classList.toggle("div-rotate1");
     divrotate2.classList.toggle("div-rotate2");
-    HTMLPARA.textContent = "";
     resetUserName();
   });
   resetUserNamebtn2.addEventListener("click", () => {
-    HTMLPARA.textContent = "";
     resetUserName();
   });
-  //reset user name
+
+  //reset user name function ----------------->
   function resetUserName() {
+    HTMLPARA.textContent = "";
+    clearInterval(clear);
     document.querySelector(".userName").classList.remove("userName-hide");
     document.querySelector(".welcomeMsg").classList.remove("welcomeAnimation");
     DynamicName.innerText = "";
     contactform.value = "";
+    index = 0;
     document.querySelector(".reset-btn-nav").classList.add("hidden");
     document.querySelector(".resetUserName").classList.add("hidden");
     localStorage.removeItem("portfolio");
   }
 
-  //test code
+  //write auto text function------------------------>
+  function writeTextFunction() {
+    clear = setInterval(() => {
+      if (index < paraArray.length) {
+        HTMLPARA.append(paraArray[index]);
+        index++;
+      } else {
+        isValid = false;
+        return;
+      }
+    }, 50);
+  }
 });
 
 // user name innput end
