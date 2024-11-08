@@ -411,7 +411,7 @@ header .navbar ul li a {
   width: 1000px;
   background-image: radial-gradient(
     closest-side,
-    rgba(199, 44, 234, 0.21),
+    rgba(44, 198, 234, 0.21),
     rgb(3 7 18)
   );
   position: absolute;

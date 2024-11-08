@@ -21,15 +21,15 @@ gsap.from(".education .collages .gour", {
   scrollTrigger: ".education .collages .gour",
 });
 
-// zoom out
-gsap.from(".education .collages .iitm img", {
-  scale: 1.8,
-  opacity: 0,
-  scrollTrigger: ".education .collages .iitm img",
-});
+// // zoom out
+// gsap.from(".education .collages .iitm img", {
+//   scale: 1.8,
+//   opacity: 0,
+//   scrollTrigger: ".education .collages .iitm img",
+// });
 
-gsap.from(".education .collages .gour img", {
-  scale: 1.8,
-  opacity: 0,
-  scrollTrigger: ".education .collages .gour img",
-});
+// gsap.from(".education .collages .gour img", {
+//   scale: 1.8,
+//   opacity: 0,
+//   scrollTrigger: ".education .collages .gour img",
+// });

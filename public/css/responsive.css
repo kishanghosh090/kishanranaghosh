@@ -160,7 +160,7 @@
 
   .hero .hero-main .myImg {
     position: absolute;
-    bottom: 0;
+    top: 50%;
   }
 
   .ham {
@@ -192,6 +192,9 @@
 }
 
 @media (max-width: 792px) {
+  .hero .hero-main .myImg {
+    gap: 0rem;
+  }
   .hero .hero-main .info h3 {
     font-size: 16px;
   }
@@ -215,6 +218,10 @@
 }
 
 @media (max-width: 590px) {
+  .hero .hero-main .myImg {
+    position: absolute;
+    top: 48%;
+  }
   .hero .hero-main .info .name {
     font-size: 50px;
   }
@@ -224,7 +231,7 @@
   }
 
   .hero .hero-main {
-    gap: 6rem;
+    gap: 2rem;
   }
 
   .hero .project .card img {
