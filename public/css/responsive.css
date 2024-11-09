@@ -46,7 +46,7 @@
     flex-direction: column;
     position: absolute;
     height: 100vh;
-    width: 100%;
+    width: 92%;
     background: linear-gradient(
       90deg,
       rgb(2, 0, 36) 0%,
@@ -59,6 +59,8 @@
     align-items: center;
     gap: 4rem;
     z-index: 999;
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
   }
 
   header .navbar ul li {
@@ -70,7 +72,7 @@
   .cover {
     position: absolute;
     height: 100vh;
-    width: 100%;
+    width: 90%;
     background: linear-gradient(
       90deg,
       rgb(75, 23, 23) 57%,
@@ -79,13 +81,14 @@
     );
     top: 0px;
     z-index: 999;
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
   }
 
   .cover2 {
     position: absolute;
     height: 100vh;
-    width: 100%;
-
+    width: 90%;
     background: rgb(75, 23, 23);
     background: linear-gradient(
       90deg,
@@ -95,6 +98,8 @@
     );
     top: 0;
     z-index: 999;
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
   }
 
   .cover-hide2 {
