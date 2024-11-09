@@ -18,6 +18,9 @@
   --bg-project-main: rgba(255, 255, 255, 0.6);
   --bg-project-button-text: #585858;
   --bg-project-code-button: #f0f4f9;
+  --bg-navbar-darkmode: rgb(30 55 67 / 40%);
+  --skill-border: rgb(0 171 250 / 70%);
+  --contact-border: rgb(187 215 20 / 70%);
 }
 
 body {
@@ -143,7 +146,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: var(--bg-header);
+  background-color: var(--bg-navbar-darkmode);
   backdrop-filter: blur(10px);
   padding: 1rem;
   position: fixed;
@@ -609,6 +612,9 @@ header .navbar ul li a {
   flex-wrap: wrap;
   gap: 2rem;
   border: 2px dotted;
+  box-shadow: rgba(225 216 216 / 10%) 0px 29px 55px,
+    rgb(205 199 199 / 1%) 0px -12px 30px, rgb(237 224 224 / 1%) 0px 4px 6px,
+    rgb(245 232 232 / 2%) 0px 12px 13px, rgb(255 242 242 / 1%) 0px -3px 5px;
 }
 
 .education .collages .iitm .img img {
@@ -700,7 +706,7 @@ header .navbar ul li a {
   perspective: 800px;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
   max-width: 70%;
 }
 .skill {
@@ -709,7 +715,7 @@ header .navbar ul li a {
     rgba(180, 172, 172, 0.3) 0px 18px 36px -18px inset;
 }
 .about .skills .skill {
-  height: 10rem;
+  height: 11rem;
   width: 28rem;
   padding: 1rem;
   border-radius: 1rem;
@@ -718,22 +724,8 @@ header .navbar ul li a {
   align-items: center;
   justify-content: flex-start;
   gap: 2rem;
-  border: 2px dotted;
+  border: 1px solid var(--skill-border);
   font-family: "Fira Mono", monospace;
-
-  animation: animateViewleft linear;
-  animation-timeline: view();
-  animation-range: entry 0 cover 40%;
-}
-
-@keyframes animateViewleft {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(0%);
-  }
 }
 
 .about .skills .skill:hover {
@@ -797,7 +789,12 @@ header .navbar ul li a {
 
 /* contact section start */
 .contactme {
-  background-color: var(--bg-color-main);
+  /* background-color: var(--bg-color-main); */
+  background-image: radial-gradient(
+    closest-side,
+    rgb(94 255 27 / 21%),
+    rgb(3 7 18)
+  );
   color: #fff;
   height: 76vh;
   display: flex;
@@ -826,6 +823,9 @@ header .navbar ul li a {
   flex-direction: column;
   padding: 1rem;
   border: 2px dotted;
+  border-radius: 13px;
+  /* border: 1px solid var(--contact-border);
+*/
 }
 
 .contactme .container form {

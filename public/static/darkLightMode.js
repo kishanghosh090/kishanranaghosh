@@ -57,7 +57,7 @@ function toLightMode() {
   ball.classList.add("ball-ani");
   body.classList.add("LightMode-body");
   usernamecontainer.classList.add("LightMode-for-userNamr-container");
-  home.classList.add("LightMode");
+  home.classList.add("LightModeNavBar");
   div1.classList.add("LightMode-ham");
   div2.classList.add("LightMode-ham");
   hero.classList.add("LightMode-body");
@@ -83,7 +83,7 @@ function toDarkMode() {
   ball.classList.remove("ball-ani");
   body.classList.remove("LightMode-body");
   usernamecontainer.classList.remove("LightMode-for-userNamr-container");
-  home.classList.remove("LightMode");
+  home.classList.remove("LightModeNavBar");
   div1.classList.remove("LightMode-ham");
   div2.classList.remove("LightMode-ham");
   hero.classList.remove("LightMode-body");
