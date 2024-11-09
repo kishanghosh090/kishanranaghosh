@@ -477,13 +477,14 @@ header .navbar ul li a {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
-.hero .hero-main .info .hero-contact:hover {
   background-image: radial-gradient(
     circle farthest-corner at 10% 20%,
     rgba(255, 94, 247, 1) 17.8%,
     rgba(2, 245, 255, 1) 100.2%
   );
+}
+.hero .hero-main .info .hero-contact:hover {
+  background-image: none;
 }
 
 .hero .hero-main .info .hero-contact::after {
