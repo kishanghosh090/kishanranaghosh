@@ -153,6 +153,7 @@ header {
   z-index: 99999;
   width: 100%;
   margin: auto;
+  border-bottom: 0.5px solid rgb(12 61 85 / 50%);
 }
 
 .cover {
@@ -254,19 +255,15 @@ header .navbar ul li {
   font-family: "Fira Code", monospace;
   font-weight: 500;
   font-size: 1.2rem;
-  padding: 7px;
-  border-radius: 10px;
   transition: all 0.3s ease-out;
 }
 
 header .navbar ul li:hover {
-  transform: scale(1.1);
-  background-color: rgb(13, 28, 68);
+  transform: scale(1.1) translateY(-5px);
 }
 
 header .navbar ul .linkedin {
-  background-color: rgb(13, 28, 68);
-  padding: 10px;
+  border: 1px solid olivedrab;
   border-radius: 10px;
 }
 header .navbar ul .resetUserName-btn1 {
@@ -286,9 +283,18 @@ header .navbar ul .linkedin a i {
 }
 
 header .navbar ul li a {
+  border-radius: 10px;
   color: #fff;
+  padding: 7px;
+  background-color: #8ab4f8;
 }
-
+header .navbar ul li a:hover {
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgb(16, 6, 27) 17.8%,
+    rgb(24, 180, 186) 100.2%
+  );
+}
 .ham i {
   font-size: 1.5rem;
 }
@@ -798,14 +804,10 @@ header .navbar ul li a {
 
 /* contact section start */
 .contactme {
-  /* background-color: var(--bg-color-main); */
-  background-image: radial-gradient(
-    closest-side,
-    rgb(94 255 27 / 21%),
-    rgb(3 7 18)
-  );
+  background-color: var(--bg-color-main);
   color: #fff;
-  height: 76vh;
+  /* height: 76vh; */
+  padding: 3rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -829,12 +831,12 @@ header .navbar ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-wrap: wrap;
   padding: 1rem;
+  gap: 1rem;
   border: 2px dotted;
+
   border-radius: 13px;
-  /* border: 1px solid var(--contact-border);
-*/
 }
 
 .contactme .container form {

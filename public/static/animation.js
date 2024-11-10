@@ -5,14 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
     duration: 1,
     opacity: 0.5,
     scrollTrigger: ".education .collages .iitm",
-    //   scrollTrigger: {
-    //     trigger: ".education .collages .iitm",
-    //     scrollr: "body",
-    //     markers: true,
-    //     // start: "top 55%",
-    //     // end: "top 33%",
-    //     scrub: 5,
-    //   },
   });
 
   gsap.from(".education .collages .gour", {
